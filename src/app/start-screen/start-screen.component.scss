@@ -10,3 +10,32 @@
     height: 100vh;
   }
 }
+
+.start-label-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 130px;
+  display: flex;
+  justify-content: center;
+  > img {
+    width: 450px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    &:hover {
+      filter: brightness(1.25);
+      cursor: pointer;
+    }
+  }
+  > span {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    pointer-events: none;
+  }
+}
